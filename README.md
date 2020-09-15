@@ -14,3 +14,11 @@ This side of the code takes in the temperature from the user or it takes in the 
  The TP2
  This file takes in the in the values from the SlaveModule and then converts it into values to allow for the pump and cooling unit to operate.
 - The code maps the range of values in voltage to write to the pump and cooling unit what speeds to operate at. The mapping was done in a side experimental setup to understand what gal/min the pump would operate at given a set voltage and the same was done with the cooling unit with variable pump speeds and voltages sent to it to adjust cooling.
+
+The LiveImport
+ Designed to take in live data from an arduino and feed that into an excel sheet automatically. 
+ - We used python because of the power it has to handle larger datasets and it could process it much better than Arduino could. 
+ 
+ Kalman
+ - Kalman was used to record the different temperatured readings that we were recieving. 
+ - It allowed us to collect data through our specialized temperature probes
