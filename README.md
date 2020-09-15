@@ -12,4 +12,5 @@ This side of the code takes in the temperature from the user or it takes in the 
 - This information is sent to another microcontroller via Wi-Fi.
  
  The TP2
- This file takes in the in
+ This file takes in the in the values from the SlaveModule and then converts it into values to allow for the pump and cooling unit to operate.
+- The code maps the range of values in voltage to write to the pump and cooling unit what speeds to operate at. The mapping was done in a side experimental setup to understand what gal/min the pump would operate at given a set voltage and the same was done with the cooling unit with variable pump speeds and voltages sent to it to adjust cooling.
